@@ -1,0 +1,32 @@
+#include <iostream>
+#include<cmath>
+#include <string>
+using namespace std;
+
+int main()
+{
+    cout<<"Hello Welcome to the App"<<endl;
+    cout<<"Please create a id"<<endl;
+    cout<<"Choose a username"<<endl;
+    string u1;
+    getline(cin,u1);
+    cout<<"Choose a pasword"<<endl;
+    string p1;
+    getline(cin,p1);
+    cout<<"Please enter your username"<<endl;
+    string u2;
+    getline(cin,u2);
+    cout<<"Please enter your pasword"<<endl;
+    string p2;
+    getline(cin,p2);
+    while(u2!=u1&&p2!=p1)
+    {
+        cout<<"Wrong username or pasword"<<endl;
+        cout<<"Please enter your username"<<endl;
+        getline(cin,u2);
+        cout<<"Please enter your pasword"<<endl;
+        getline(cin,p2);
+    }
+    cout<<"Welcome to app"<<endl;
+    return 0;
+}
