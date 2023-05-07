@@ -49,8 +49,8 @@ int main()
     if(m2=="yes")
     {
         cout<<"Select what bagel you want"<<endl;
-        string bageltype[] = ["nature bagel","egg bagel","cheese bagel"];
-        double bagel[]=[3.00,4.00,5.00];
+        string bageltype[] = {"nature bagel","egg bagel","cheese bagel"};
+        double bagel[]={3.00,4.00,5.00};
         cout<<1<<bageltype[0]<<"cost "<<bagel[0]<<endl;
         cout<<2<<bageltype[1]<<"cost "<<bagel[1]<<endl;
         cout<<3<<bageltype[2]<<"cost "<<bagel[2]<<endl;
