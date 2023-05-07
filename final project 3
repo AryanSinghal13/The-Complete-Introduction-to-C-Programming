@@ -1,0 +1,67 @@
+#include <iostream>
+#include<cmath>
+#include <string>
+using namespace std;
+
+int main()
+{
+    cout<<"Hello Welcome to the App"<<endl;
+    cout<<"Please create a id"<<endl;
+    cout<<"Choose a username"<<endl;
+    string u1;
+    getline(cin,u1);
+    cout<<"Choose a pasword"<<endl;
+    string p1;
+    getline(cin,p1);
+    cout<<"Please enter your username"<<endl;
+    string u2;
+    getline(cin,u2);
+    cout<<"Please enter your pasword"<<endl;
+    string p2;
+    getline(cin,p2);
+    while(u2!=u1&&p2!=p1)
+    {
+        cout<<"Wrong username or pasword"<<endl;
+        cout<<"Please enter your username"<<endl;
+        getline(cin,u2);
+        cout<<"Please enter your pasword"<<endl;
+        getline(cin,p2);
+    }
+    cout<<"Welcome to app"<<endl;
+    //2nd
+    double bal=5.00;
+    cout<<"Would you like to add money"<<endl;
+    string m1;
+    getline(cin,m1);
+    if(m1=="yes")
+    {
+        cout<<"Enter the amount of money"<<endl;
+        double add;
+        cin>>add;
+        bal+=add;
+        cout<<"Total balance "<<bal<<endl;
+    }
+    else cout<<"Alright"<<endl;
+    //3rd
+    cout<<"Would you like a bagel today?"<<endl;
+    string m2;
+    getline(cin,m2);
+    if(m2=="yes")
+    {
+        cout<<"Select what bagel you want"<<endl;
+        string bageltype[] = ["nature bagel","egg bagel","cheese bagel"];
+        double bagel[]=[3.00,4.00,5.00];
+        cout<<1<<bageltype[0]<<"cost "<<bagel[0]<<endl;
+        cout<<2<<bageltype[1]<<"cost "<<bagel[1]<<endl;
+        cout<<3<<bageltype[2]<<"cost "<<bagel[2]<<endl;
+        cout<<"Enter your choice"<<endl;
+        int ch;
+        cin>>ch;
+        
+    }
+    else 
+    {
+        cout<<"Have a good day"<<endl;
+    }
+    return 0;
+}
